@@ -1,35 +1,48 @@
 {
-  "parser": "babel-eslint",
-  "rules": {
-    "semi": [2, "always"],
-    "quotes": [2, "single"],
-    "max-len": [
-      "error",
-      {
-        "code": 120,
-        "ignoreStrings": true,
-        "ignoreComments": true,
-        "ignoreTemplateLiterals": true
-      }
-    ],
-    "camelcase": 0,
-    "operator-linebreak": [
-      "error",
-      "before",
-      {
-        "overrides": {
-          "=": "ignore"
-        }
-      }
-    ]
-  },
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true,
-      "modules": true,
-      "experimentalObjectRestSpread": true
-    }
-  }
+	"parser": "babel-eslint",
+	"rules": {
+		"semi": [
+			2,
+			"always"
+		],
+		"quotes": [
+			2,
+			"single"
+		],
+		"max-len": [
+			"error",
+			{
+				"code": 120,
+				"ignoreStrings": true,
+				"ignoreComments": true,
+				"ignoreTemplateLiterals": true
+			}
+		],
+		"arrow-body-style": [
+			"error",
+			"as-needed",
+			{
+				"requireReturnForObjectLiteral": false
+			}
+		],
+		"camelcase": 0,
+		"operator-linebreak": [
+			"error",
+			"before",
+			{
+				"overrides": {
+					"=": "ignore"
+				}
+			}
+		]
+	},
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"modules": true,
+			"experimentalObjectRestSpread": true
+		}
+	}
 }
