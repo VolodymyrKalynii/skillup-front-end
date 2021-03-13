@@ -97,7 +97,7 @@ module.exports = (env, options) => {
 					exclude: /node_modules/,
 				},
 				{
-					test: /\.(svg|png|jpg|jpeg|woff|woff2|otf|ogg|aac|mp3|mp4|wav|ico)$/,
+					test: /\.(svg|png|jpg|jpeg|woff|woff2|otf|ico)$/,
 					loader: 'file-loader',
 					options: {
 						publicPath,
