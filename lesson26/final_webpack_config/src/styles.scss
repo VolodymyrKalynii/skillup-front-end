@@ -1,0 +1,11 @@
+$font-size: 1rem;
+$font-color: orange;
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+
+  h1{
+    color: blue;
+  }
+}
