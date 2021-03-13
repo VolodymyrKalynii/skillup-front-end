@@ -28,7 +28,7 @@ const conf = {
             title: 'webpack Boilerplate',
             template: path.resolve(__dirname, './src/template.html'), // шаблон
             filename: 'index.html', // название выходного файла
-        }),
+        })
     ],
     devServer: {
         historyApiFallback: true,
@@ -42,7 +42,7 @@ const conf = {
 
 module.exports = (env, options) => {
     const isProd = options.mode === 'production';
-    conf.devtool = isProd ? false : 'eval-cheap-module-source-map';
+    // conf.devtool = isProd ? false : 'eval-cheap-module-source-map';
     conf.target = isProd ? 'browserslist' : 'web';
 
     return conf;
