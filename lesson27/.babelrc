@@ -1,12 +1,5 @@
 {
   "presets": [
     "@babel/preset-react"
-  ],
-  "plugins": [
-    "@babel/transform-arrow-functions",
-    "@babel/plugin-transform-runtime",
-    "@babel/plugin-proposal-class-properties",
-    "@babel/transform-async-to-generator",
-    "@babel/transform-modules-commonjs"
   ]
 }
