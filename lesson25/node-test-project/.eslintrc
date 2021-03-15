@@ -1,0 +1,27 @@
+{
+	"rules": {
+		"no-var": "error",
+		"semi": [2,"always"],
+		"quotes": [2,"single"],
+		"arrow-body-style": [
+			"error", "as-needed", {
+			"requireReturnForObjectLiteral": false
+		  }],
+		"max-len": [
+			"error",
+			{
+				"code": 120,
+				"ignoreStrings": true,
+				"ignoreComments": true,
+				"ignoreTemplateLiterals": true
+			}
+		]
+	},
+	"parserOptions": {
+		"ecmaVersion": 2021,
+		"sourceType": "module"
+	},
+	"env": {
+		"es6": true
+	}
+}
