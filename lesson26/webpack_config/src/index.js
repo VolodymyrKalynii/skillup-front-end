@@ -1,5 +1,8 @@
 import './scss/main.scss';
 
+import $ from "jquery";
+
+
 import User from './User.js';
 import {multThree, multTwo} from './functions';
 
@@ -19,7 +22,9 @@ const layout = `<div class='items'>
     <div class='item'>item</div>
 </div>`
 
-document.querySelector('#app').innerHTML = layout;
+$('#app').html(layout);
+
+
 
 
 const john = new User('John');
