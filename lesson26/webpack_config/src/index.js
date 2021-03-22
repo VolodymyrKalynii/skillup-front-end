@@ -1,3 +1,5 @@
+import './scss/main.scss';
+
 import User from './User.js';
 import {multThree, multTwo} from './functions';
 
@@ -10,7 +12,14 @@ const foo = (name) => {
 foo('asdad');
 foo('Test');
 
-document.querySelector('#app').innerHTML = 'Привет большой мир';
+
+const layout = `<div class='items'>
+    <div class='item'>item</div>
+    <div class='item'>item</div>
+    <div class='item'>item</div>
+</div>`
+
+document.querySelector('#app').innerHTML = layout;
 
 
 const john = new User('John');
