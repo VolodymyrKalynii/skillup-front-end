@@ -1,0 +1,1 @@
+(()=>{console.log("hello word");const o=o=>{console.log(`hello ${o}`)};o("asdad"),o("Test")})();
