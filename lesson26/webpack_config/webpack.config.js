@@ -7,10 +7,19 @@ const conf = {
     entry: {
         main: path.resolve(__dirname, './src/index.js'),
     },
-
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].bundle.js',
+    },
+    module: {
+        rules: [
+            // JavaScript
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: ['babel-loader'],
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -27,11 +36,14 @@ const conf = {
         hot: true,
         port: 8080,
     },
-
-
 }
 
 
+module.exports = (env, options) => {
+    const isProd = options.mode === 'production';
 
+    conf.target = isProd ? 'browserslist' : 'web';
 
-module.exports = () => { return conf };
+    return conf;
+};
+
