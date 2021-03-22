@@ -19,6 +19,15 @@ const conf = {
             filename: 'index.html', // название выходного файла
         }),
     ],
+    devServer: {
+        historyApiFallback: true,
+        contentBase: path.resolve(__dirname, './dist'),
+        open: true,
+        compress: true,
+        hot: true,
+        port: 8080,
+    },
+
 
 }
 
