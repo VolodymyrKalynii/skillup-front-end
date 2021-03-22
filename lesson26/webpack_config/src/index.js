@@ -7,3 +7,10 @@ const foo = (name) => {
 
 foo('asdad');
 foo('Test');
+
+
+document.querySelector('#app').innerHTML = 'Привет мир';
+
+
+
+// .innerHTML('asdasdada')
