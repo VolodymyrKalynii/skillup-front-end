@@ -1,5 +1,6 @@
 {
   "parser": "babel-eslint",
+  "extends": ["react-app", "shared-config"],
   "rules": {
     "semi": [2, "always"],
     "quotes": [2, "single"],
@@ -12,6 +13,8 @@
         "ignoreTemplateLiterals": true
       }
     ],
+    "react/jsx-no-undef": ["error", { "allowGlobals": false }],
+    "no-var": "error",
     "camelcase": 0,
     "operator-linebreak": [
       "error",
@@ -21,7 +24,11 @@
           "=": "ignore"
         }
       }
-    ]
+    ],
+    "arrow-body-style": [
+      "error", "as-needed", {
+      "requireReturnForObjectLiteral": false
+    }]
   },
   "parserOptions": {
     "ecmaVersion": 2020,

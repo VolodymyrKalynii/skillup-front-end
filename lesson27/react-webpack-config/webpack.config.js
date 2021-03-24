@@ -46,7 +46,7 @@ const createPlugins = (isProd) => {
 	return def;
 };
 
-const localIdentClassesName = (isProd) => !isProd ? '[path][name]_[local]' : '[local]_[hash:base64:8]';
+const localIdentClassesName = (isProd) => !isProd ? '[path]_[local]' : '[local]_[hash:base64:8]';
 /**
  * @param {boolean} isProd
  * @returns {[{loader: string}]|[*]}
