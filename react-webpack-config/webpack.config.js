@@ -109,9 +109,6 @@ module.exports = (env, options) => {
 		},
 		resolve: {
 			extensions: ['*', '.js', '.jsx'],
-			alias: {
-				'@assets': path.resolve(__dirname, 'assets'),
-			}
 		},
 		output: {
 			path: path.resolve(__dirname, './dist'),
