@@ -23,6 +23,8 @@
     "css-loader": "^5.0.1",
     "cssnano": "^4.1.10",
     "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-loader": "^4.0.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.1",
     "postcss-loader": "^4.1.0",

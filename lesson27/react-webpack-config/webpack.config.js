@@ -46,7 +46,7 @@ const createPlugins = (isProd) => {
 	return def;
 };
 
-const localIdentClassesName = (isProd) => !isProd ? '[path]_[local]' : '[local]_[hash:base64:8]';
+const localIdentClassesName = (isProd) => !isProd ? '[path]_[local]' : '[local]_[hash:base64:8]'; // хеш для модульных стилей
 /**
  * @param {boolean} isProd
  * @returns {[{loader: string}]|[*]}
@@ -89,7 +89,7 @@ module.exports = (env, options) => {
 				{
 					test: /\.(js|jsx)$/,
 					exclude: /node_modules/,
-					use: ['babel-loader'],
+					use: ['babel-loader', 'eslint-loader'],
 				},
 				{
 					test: /\.(scss)$/,
