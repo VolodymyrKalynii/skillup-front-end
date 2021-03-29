@@ -10,6 +10,11 @@
     "postcss.config.js"
   ],
   "rules": {
+    "indent": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-one-expression-per-line":"off",
+    "react/prop-types": "off",
+    "no-console": "off",
     "react/jsx-indent": "off",
     "import/prefer-default-export": "off",
     "object-curly-spacing": ["error", "never"],
