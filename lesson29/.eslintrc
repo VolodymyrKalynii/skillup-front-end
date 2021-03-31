@@ -11,6 +11,12 @@
   ],
   "rules": {
     "indent": "off",
+    "object-curly-newline": "off",
+    "no-useless-constructor": "off",
+    "react/state-in-constructor": "off",
+    "react/destructuring-assignment": "off",
+    "padded-blocks": "off",
+    "react/prefer-stateless-function": "off",
     "react/jsx-tag-spacing": "off",
     "implicit-arrow-linebreak": "off",
     "react/jsx-props-no-spreading": "off",
