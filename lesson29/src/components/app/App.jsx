@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Title, Comments} from './components';
 
-const App = () => {
+import {Title, Comments} from './parts';
+
+export const App = () => {
     const commentsList = [
         {
             id: 2,
@@ -31,13 +31,3 @@ const App = () => {
         </div>
     );
 };
-
-ReactDOM.render(
-    <App />,
-    document.getElementById('app')
-);
-
-// SomeName
-// some-name
-
-
