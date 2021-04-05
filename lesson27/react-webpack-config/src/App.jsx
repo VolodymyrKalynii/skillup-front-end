@@ -36,8 +36,3 @@ ReactDOM.render(
     <App />,
     document.getElementById('app')
 );
-
-// SomeName
-// some-name
-
-

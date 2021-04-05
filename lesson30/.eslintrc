@@ -1,0 +1,71 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "ignorePatterns": [
+    "webpack.config.js",
+    "postcss.config.js"
+  ],
+  "rules": {
+    "indent": "off",
+    "object-curly-newline": "off",
+    "no-useless-constructor": "off",
+    "react/state-in-constructor": "off",
+    "react/destructuring-assignment": "off",
+    "padded-blocks": "off",
+    "react/prefer-stateless-function": "off",
+    "react/jsx-tag-spacing": "off",
+    "implicit-arrow-linebreak": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-one-expression-per-line":"off",
+    "react/prop-types": "off",
+    "no-console": "off",
+    "react/jsx-indent": "off",
+    "import/prefer-default-export": "off",
+    "object-curly-spacing": ["error", "never"],
+    "eol-last": "off",
+    "linebreak-style": ["error", "windows"],
+    "comma-dangle": ["error", "never"],
+    "semi": [2, "always"],
+    "quotes": [2, "single"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 1}],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreStrings": true,
+        "ignoreComments": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "react/jsx-no-undef": ["error", { "allowGlobals": false }],
+    "no-var": "error",
+    "camelcase": 0,
+    "operator-linebreak": [
+      "error",
+      "before",
+      {
+        "overrides": {
+          "=": "ignore"
+        }
+      }
+    ],
+    "arrow-body-style": [
+      "error", "as-needed", {
+      "requireReturnForObjectLiteral": false
+    }]
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  }
+}
