@@ -1,0 +1,1 @@
+export {InputFunc} from './InputFunc';

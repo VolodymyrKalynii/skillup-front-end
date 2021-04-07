@@ -26,16 +26,16 @@ export class ClickCounter extends Component {
     componentDidMount() {
         console.log('componentDidMount');
 
-        const doneCb = () => {
-            console.log('done');
-        };
+        // const doneCb = () => {
+        //     console.log('done');
+        // };
 
-        setTimeout(() => {
-            this.setState({
-                isDataLoaded: true,
-                data: Math.random()
-            }, doneCb);
-        }, 2000);
+        // setTimeout(() => {
+        //     this.setState({
+        //         isDataLoaded: true,
+        //         data: Math.random()
+        //     }, doneCb);
+        // }, 2000);
     }
 
     // shouldComponentUpdate() {
@@ -48,13 +48,13 @@ export class ClickCounter extends Component {
     //     console.log('getSnapshotBeforeUpdate');
     // }
 
-    // componentDidUpdate() {
-    //     console.log('componentDidUpdate');
-    // }
+    componentDidUpdate() {
+        console.log('componentDidUpdate');
+    }
 
-    // componentWillUnmount() {
-    //     console.log('componentWillUnmount');
-    // }
+    componentWillUnmount() {
+        console.log('componentWillUnmount');
+    }
 
     btnHanlder = () => {
         // this.state.clicksQty = 10; // не правильно!!!
@@ -89,15 +89,14 @@ export class ClickCounter extends Component {
         const {
             clicksQty, randNumber, isDataLoaded, data
         } = this.state;
-
+            // console.log(isDataLoaded, data);
         return (
             <div>
                 <p>Количество кликов: {clicksQty}</p>
                 <p><button className={styles.button} type='button' onClick={this.btnHanlder}>click</button></p>
                 <p>Случайное число: {randNumber}</p>
                 <p><button className={styles.button} type='button' onClick={this.btn2Hanlder}>getRandNumber</button></p>
-                <p>{isDataLoaded ? <span>Данные с сервера: {data}</span> : <span>Загрузка...</span>}
-                </p>
+                {/* <p>{isDataLoaded ? <span>Данные с сервера: {data}</span> : <span>Загрузка...</span>}</p> */}
             </div>
         );
     }
