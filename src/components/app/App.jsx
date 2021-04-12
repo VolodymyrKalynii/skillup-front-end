@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-// import {CommentsApp} from '../comments-app';
-import {ClickCounter} from '../click-counter';
-import {ClickCounterFunc} from '../click-counter-func';
+import {CommentsApp} from '../comments-app';
+// import {ClickCounter} from '../click-counter';
+// import {ClickCounterFunc} from '../click-counter-func';
 // import {InputFunc} from '../input-func';
 
 export const App = () => {
@@ -11,16 +11,21 @@ export const App = () => {
         setIsShowCounters((prev) => !prev);
     };
 
+    const user = {
+        name: 'Ivan',
+        age: 35
+    };
+
     return (
         <div>
             <button type='button' onClick={btnHandler}>{isShowCounters ? 'Скрыть' : 'Показать'}</button>
-            {isShowCounters && <div><ClickCounter /><hr/><ClickCounterFunc /></div>}
+            {/* {isShowCounters && <div><hr/><ClickCounterFunc /></div>} */}
             {/* <ClickCounter /> */}
             
             {/* <ClickCounterFunc /> */}
             <hr/>
             {/* <InputFunc /> */}
-            {/* <CommentsApp /> */}
+            <CommentsApp user={user} />
         </div>
     );
 };

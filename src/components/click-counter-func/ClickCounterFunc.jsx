@@ -1,5 +1,9 @@
 /* eslint-disable arrow-body-style */
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useMemo, useLayoutEffect} from 'react';
+
+import {calculateFib} from '../../lib/fib-calculator';
+import {sleepApp} from '../../lib/sleep-app';
+// import {timeFunctionTest} from '../../lib/perf-test';
 
 import styles from './styles.scss';
 
@@ -7,27 +11,31 @@ export const ClickCounterFunc = ({initClicksQty = 0}) => {
     const [clickCounter, setClickCounter] = useState(initClicksQty);
     const [rndNumber, setRndNumber] = useState();
 
-    // useEffect(() => {
-    //     const timeout = setTimeout(() => {
-    //         setRndNumber(Math.random());
-    //     }, 1000);
+    useLayoutEffect(() => {
+        console.log('запос mount useLayoutEffect');
 
-    //     return () => {
-    //         console.log('unmount');
-    //         clearTimeout(timeout);
-    //     };
-    // }, [rndNumber]);
+        sleepApp(4000);
+        console.log('done');
+    }, []);
+
+    // useEffect(() => {
+    //     console.log('запос mount');
+
+    //     sleepApp(4000);
+    //     console.log('done');
+    // }, []);
 
     useEffect(() => {
-        const timeout = setTimeout(() => {
-            setClickCounter((prev) => prev + 1);
-        }, 1000);
+        console.log('запос all time');
+    });
 
-        return () => {
-            console.log('unmount');
-            clearTimeout(timeout);
-        };
+    useEffect(() => {
+        console.log('запос только когда изменяется clickCounter');
     }, [clickCounter]);
+
+    useEffect(() => {
+        console.log('запос только когда изменяется rndNumber');
+    }, [rndNumber]);
 
     const btnHanlder = () => {
         setClickCounter((prevState) => prevState + 1);
@@ -36,8 +44,12 @@ export const ClickCounterFunc = ({initClicksQty = 0}) => {
     const btn2Hanlder = () => {
         setRndNumber(Math.random());
     };
+    
+    const result = useMemo(() => calculateFib(clickCounter), [clickCounter]);
 
-    console.log('render fc');
+    // timeFunctionTest(10, () => calculateFib(45));
+
+    // const result = calculateFib(clickCounter);
 
     return (
         <div>
@@ -45,6 +57,7 @@ export const ClickCounterFunc = ({initClicksQty = 0}) => {
             <p><button className={styles.button} type='button' onClick={btnHanlder}>click</button></p>
             <p>Случайное число: {rndNumber}</p>
             <p><button className={styles.button} type='button' onClick={btn2Hanlder}>getRandNumber</button></p>
+            <p>Число Фиббоначи для {clickCounter} : {result}</p>
         </div>
     );
 };

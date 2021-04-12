@@ -10,3 +10,11 @@ export const calculateFib = (n) => {
 
     return prev;
 };
+
+// export const calculateFib = (n) => {
+//     if (n <= 1) {
+//       return n;
+//     } else {
+//       return calculateFib(n - 1) + calculateFib(n - 2);
+//     }
+//   };

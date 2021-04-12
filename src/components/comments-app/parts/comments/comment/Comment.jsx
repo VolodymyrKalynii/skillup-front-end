@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {Title} from './title/Title';
 
@@ -22,3 +23,12 @@ export const Comment = ({avatar, id, author, text, isLikeed, toggleCommentLikee,
     );
 };
 
+Comment.propTypes = {
+    id: PropTypes.number.isRequired,
+    avatar: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    isLikeed: PropTypes.bool.isRequired,
+    toggleCommentLikee: PropTypes.func.isRequired,
+    delHandler: PropTypes.func.isRequired
+};

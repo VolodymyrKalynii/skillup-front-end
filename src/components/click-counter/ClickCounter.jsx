@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+// import {sleepApp} from '../../lib/sleep-app';
+
 import styles from './styles.scss';
 
 export class ClickCounter extends Component {
@@ -25,6 +27,8 @@ export class ClickCounter extends Component {
 
     componentDidMount() {
         console.log('componentDidMount');
+
+        // sleepApp(4000);
 
         // const doneCb = () => {
         //     console.log('done');
