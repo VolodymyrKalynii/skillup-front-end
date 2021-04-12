@@ -89,7 +89,7 @@ export class ClickCounter extends Component {
         const {
             clicksQty, randNumber, isDataLoaded, data
         } = this.state;
-            // console.log(isDataLoaded, data);
+            console.log(isDataLoaded, data);
         return (
             <div>
                 <p>Количество кликов: {clicksQty}</p>
