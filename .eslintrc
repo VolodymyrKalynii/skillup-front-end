@@ -10,6 +10,8 @@
     "postcss.config.js"
   ],
   "rules": {
+    "one-var": "off",
+    "no-plusplus": "off",
     "indent": "off",
     "import/no-unresolved": "off",
     "import/no-absolute-path": "off",
