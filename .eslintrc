@@ -11,6 +11,7 @@
   ],
   "rules": {
     "one-var": "off",
+    "react/jsx-closing-tag-location": "off",
     "no-plusplus": "off",
     "indent": "off",
     "import/no-unresolved": "off",
