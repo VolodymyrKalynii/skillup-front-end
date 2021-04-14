@@ -41,7 +41,7 @@ const Product = (p) => {
         return () => {
             isMounted = false;
         };
-    });
+    }, [id]);
 
     if (data === null) return <div>loader.....</div>;
 
