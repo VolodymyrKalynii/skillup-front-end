@@ -1,3 +1,3 @@
-export {CommentsApp} from './comments-app';
-export {Loader} from './loader';
+export {CommentsApp} from './common/comments-app';
+export {Loader} from './common/loader';
 export {App} from './app/App';

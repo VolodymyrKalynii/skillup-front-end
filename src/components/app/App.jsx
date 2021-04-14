@@ -1,31 +1,36 @@
-import React, {useState} from 'react';
-import {CommentsApp} from '../comments-app';
+import React from 'react';
+import {BrowserRouter} from 'react-router-dom';
+// import {Planets} from '../common/planets';
+
+import {Nav} from '../common/nav';
+
+import {RoutesWrapper} from '../routes-wrapper/RoutesWrapper';
+
 // import {ClickCounter} from '../click-counter';
 // import {ClickCounterFunc} from '../click-counter-func';
 // import {InputFunc} from '../input-func';
 
-export const App = () => {
-    const [isShowCounters, setIsShowCounters] = useState(true);
+export const App = () => (
+    <div className='wrapper'>
+        <BrowserRouter>
+            <Nav />
+            <RoutesWrapper />
+        </BrowserRouter>
 
-    const btnHandler = () => {
-        setIsShowCounters((prev) => !prev);
-    };
+    </div>
+);
 
-    const user = {
-        name: 'Ivan',
-        age: 35
-    };
+// export const App = () => {
+//     const [isShowPlanets, setIsShowPlanets] = useState(false);
 
-    return (
-        <div>
-            <button type='button' onClick={btnHandler}>{isShowCounters ? 'Скрыть' : 'Показать'}</button>
-            {/* {isShowCounters && <div><hr/><ClickCounterFunc /></div>} */}
-            {/* <ClickCounter /> */}
-            
-            {/* <ClickCounterFunc /> */}
-            <hr/>
-            {/* <InputFunc /> */}
-            <CommentsApp user={user} />
-        </div>
-    );
-};
+//     const bthnHanlder = () => {
+//         setIsShowPlanets((prev) => !prev);
+//     };
+
+//     return (
+//         <div>
+//             <button onClick={bthnHanlder} type='button'>Кнопка</button>
+//             {isShowPlanets && <Planets />}
+//         </div>
+//     );
+// };

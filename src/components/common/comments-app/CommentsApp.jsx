@@ -1,6 +1,5 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import {Loader} from '../loader';
 
@@ -110,7 +109,7 @@ export class CommentsApp extends React.Component {
     render() {
         const {commentsList, inputFilterValue, isLoaded} = this.state;
 
-        console.log(this.props.user);
+        console.log(this.props);
 
         if (!isLoaded) {
             return <Loader/>;
@@ -133,10 +132,3 @@ export class CommentsApp extends React.Component {
         );
     }
 }
-
-CommentsApp.propTypes = {
-    user: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        age: PropTypes.number.isRequired
-    }).isRequired
-};
