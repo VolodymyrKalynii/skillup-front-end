@@ -35,7 +35,6 @@ const filterComments = (inputFilterValue, commentsList) => {
     if (inputFilterValue === '') return commentsList;
 
     return commentsList.filter((item) => item.text.toLowerCase().includes(inputFilterValue.toLowerCase()));
-    // return commentsList.filter((item) => item.text.startsWith(inputFilterValue));
 };
 
 export class CommentsApp extends React.Component {
@@ -88,11 +87,6 @@ export class CommentsApp extends React.Component {
     }
 
     delHandler = (inputId) => {
-        // const result = confirm('realy???');
-        // console.log('result', result);
-
-        // if (!result) return null;
-
         const stateCb = (preState) => {
             const {commentsList} = preState;
 
@@ -109,8 +103,6 @@ export class CommentsApp extends React.Component {
     render() {
         const {commentsList, inputFilterValue, isLoaded} = this.state;
 
-        console.log(this.props);
-
         if (!isLoaded) {
             return <Loader/>;
         }
@@ -120,10 +112,6 @@ export class CommentsApp extends React.Component {
         return (
             <div>
                 <input className={styles.input} value={inputFilterValue} type='text' onChange={this.inputHandler}/>
-                {/* <CommentsFilter /> */}
-                {/* <Loader/> */}
-                {/* <ClickCounter initClicksQty={5} /> */}
-                {/* <Title /> */}
                 <Comments 
                     commentsList={filteredCommentsList} 
                     delHandler={this.delHandler} 
