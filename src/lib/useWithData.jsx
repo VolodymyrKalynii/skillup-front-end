@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from 'react';
 
-import {Loader} from '../loader';
+import {Loader} from '../components';
 
-export const Planets = () => {
+export const useWithData = (Component, url, props) => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
         let isMounted = true;
 
-        fetch('https://swapi.dev/api/planets/')
+        fetch(url)
             .then((res) => res.json())
             .then(({results}) => {
                 
@@ -23,9 +23,5 @@ export const Planets = () => {
 
     if (!data) return <Loader />;
 
-    return (
-        <div>
-            {data.map((item, id) => <p key={id}>{item.name}</p>)}
-        </div>
-    );
+    return <Component data={data} {...props} />;
 };

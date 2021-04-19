@@ -3,6 +3,8 @@ import {BrowserRouter} from 'react-router-dom';
 // import {Planets} from '../common/planets';
 
 import {Nav} from '../common/nav';
+import {InputFunc} from '../common/input-func';
+import {ErrorBoundary} from '../error';
 
 import {RoutesWrapper} from '../routes-wrapper/RoutesWrapper';
 
@@ -12,11 +14,13 @@ import {RoutesWrapper} from '../routes-wrapper/RoutesWrapper';
 
 export const App = () => (
     <div className='wrapper'>
-        <BrowserRouter>
-            <Nav />
-            <RoutesWrapper />
-        </BrowserRouter>
-
+        <ErrorBoundary>
+            <InputFunc />
+            <BrowserRouter>
+                <Nav />
+                <RoutesWrapper />
+            </BrowserRouter>
+        </ErrorBoundary>
     </div>
 );
 

@@ -1,7 +1,8 @@
-/* eslint-disable react/require-default-props */
 import React from 'react';
 
 import {Loader} from '../loader';
+
+import {CommentsAppContext} from './context';
 
 import {Comments} from './parts';
 
@@ -41,7 +42,8 @@ export class CommentsApp extends React.Component {
     state = {
         commentsList: null,
         isLoaded: false,
-        inputFilterValue: ''
+        inputFilterValue: '',
+        inputValue: ''
     }
 
     componentDidMount() {
@@ -86,6 +88,12 @@ export class CommentsApp extends React.Component {
         this.setState({inputFilterValue: value});
     }
 
+    input2Handler = (e) => {
+        const {value} = e.target;
+
+        this.setState({inputValue: value});
+    }
+
     delHandler = (inputId) => {
         const stateCb = (preState) => {
             const {commentsList} = preState;
@@ -101,22 +109,33 @@ export class CommentsApp extends React.Component {
     }
 
     render() {
-        const {commentsList, inputFilterValue, isLoaded} = this.state;
-
+        const {commentsList, inputFilterValue, isLoaded, inputValue} = this.state;
+        
         if (!isLoaded) {
             return <Loader/>;
         }
 
         const filteredCommentsList = filterComments(inputFilterValue, commentsList);
 
+        const contextValue = {
+            inputValue,
+            delHandler: this.delHandler,
+            toggleCommentLikee: this.toggleCommentLikee
+        };
+
         return (
-            <div>
-                <input className={styles.input} value={inputFilterValue} type='text' onChange={this.inputHandler}/>
-                <Comments 
-                    commentsList={filteredCommentsList} 
-                    delHandler={this.delHandler} 
-                    toggleCommentLikee={this.toggleCommentLikee} />
-            </div>
+            <CommentsAppContext.Provider value={contextValue}>
+                <div>
+                    <p>
+                        <input className={styles.input} value={inputFilterValue} type='text' onChange={this.inputHandler}/>
+                    </p>
+                    <p>
+                        <input className={styles.input} value={inputValue} type='text' onChange={this.input2Handler}/>
+                        {inputValue}
+                    </p>
+                    <Comments commentsList={filteredCommentsList} />
+                </div>
+            </CommentsAppContext.Provider>
         );
     }
 }

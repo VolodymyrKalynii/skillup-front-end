@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
 
-import {Planets} from '../common/planets';
+import {Planets, Persons} from '../common/swapi';
 
 import {Comments} from './parts';
 
@@ -67,6 +67,7 @@ export const RoutesWrapper = () => (
     <Switch>
         <Route exact path='/' component={Main} />
         <Route path='/planets' component={Planets} />
+        <Route path='/persons' component={Persons} />
         <Route path='/comments' component={Comments} />
         <Route path='/products' component={Products} />
         <Route component={() => <div>404</div>} />

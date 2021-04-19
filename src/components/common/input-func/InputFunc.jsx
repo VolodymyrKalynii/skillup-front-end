@@ -8,10 +8,18 @@ export const InputFunc = () => {
     const onInputChange = (e) => {
         const {value} = e.target;
         
+        // if (value.length > 10) { // во время ошибки НЕ сработает ErrorBoundary
+        //     throw new Error('Ошибка');
+        // }
+
         setUser((prev) => ({...prev, name: value}));
     };
 
     const {name, age} = user;
+
+    // if (name.length > 10) { 
+    //     throw new Error('Ошибка'); // во время ошибки сработает ErrorBoundary
+    // }
 
     return (
         <div>

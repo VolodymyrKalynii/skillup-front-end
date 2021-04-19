@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 import {Comment} from './comment/Comment';
 
-export const Comments = ({commentsList = [], toggleCommentLikee, delHandler}) => {
+export const Comments = ({commentsList = []}) => {
     console.log('items');
 
     return (
         <ul>{commentsList.map((item) => 
-            <Comment key={item.id} {...item} toggleCommentLikee={toggleCommentLikee} delHandler={delHandler} />)}
+            <li key={item.id} ><Comment {...item} /></li>)}
         </ul>
     );
 };
@@ -22,7 +22,5 @@ Comments.propTypes = {
             author: PropTypes.string.isRequired,
             isLikeed: PropTypes.bool.isRequired
         })
-    ).isRequired,
-    toggleCommentLikee: PropTypes.func.isRequired,
-    delHandler: PropTypes.func.isRequired
+    ).isRequired
 };
