@@ -1,1 +1,0 @@
-export {Planets} from './Planets';

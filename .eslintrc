@@ -1,6 +1,5 @@
 {
   "parser": "babel-eslint",
-  "extends": ["airbnb"],
   "env": {
     "browser": true,
     "node": true
@@ -51,7 +50,6 @@
         "ignoreTemplateLiterals": true
       }
     ],
-    "react/jsx-no-undef": ["error", { "allowGlobals": false }],
     "no-var": "error",
     "camelcase": 0,
     "operator-linebreak": [
