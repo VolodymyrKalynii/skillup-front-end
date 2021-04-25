@@ -1,34 +1,31 @@
 import React, {useState} from 'react';
+import {connect} from 'react-redux';
 
 import styles from './styles.scss';
 
-export const InputFunc = () => {
+export const InputFuncBody = ({storeContent}) => {
     const [user, setUser] = useState({name: 'Vova', age: 27});
 
     const onInputChange = (e) => {
         const {value} = e.target;
-        
-        // if (value.length > 10) { // во время ошибки НЕ сработает ErrorBoundary
-        //     throw new Error('Ошибка');
-        // }
 
         setUser((prev) => ({...prev, name: value}));
     };
 
     const {name, age} = user;
 
-    // if (name.length > 10) { 
-    //     throw new Error('Ошибка'); // во время ошибки сработает ErrorBoundary
-    // }
-
     return (
         <div>
             <p><input className={styles.input} value={name} onChange={onInputChange} type='text'/></p>
-            <p>name: {name}</p>
+            <p>name: {name} {storeContent}</p>
             <p>age: {age}</p>
         </div>
     );
 };
+
+const mapStateToProps = (storeContent) => ({storeContent});
+
+export const InputFunc = connect(mapStateToProps)(InputFuncBody);
 
 // export const InputFunc = () => {
 //     const [inputValue, setInputValue] = useState('');

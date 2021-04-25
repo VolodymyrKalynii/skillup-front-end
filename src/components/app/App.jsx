@@ -1,9 +1,13 @@
 import React from 'react';
+import {Provider} from 'react-redux';
 import {BrowserRouter} from 'react-router-dom';
+
+import {store} from '../../store/store';
 // import {Planets} from '../common/planets';
 
 import {Nav} from '../common/nav';
 import {InputFunc} from '../common/input-func';
+import {ClickCounterRedux} from '../common/click-counter-func-redux';
 import {ErrorBoundary} from '../error';
 
 import {RoutesWrapper} from '../routes-wrapper/RoutesWrapper';
@@ -14,27 +18,15 @@ import {RoutesWrapper} from '../routes-wrapper/RoutesWrapper';
 
 export const App = () => (
     <div className='wrapper'>
-        <ErrorBoundary>
-            <InputFunc />
-            <BrowserRouter>
-                <Nav />
-                <RoutesWrapper />
-            </BrowserRouter>
-        </ErrorBoundary>
+        <Provider store={store}>
+            <ErrorBoundary>
+                <InputFunc />
+                <ClickCounterRedux />
+                <BrowserRouter>
+                    <Nav />
+                    <RoutesWrapper />
+                </BrowserRouter>
+            </ErrorBoundary>
+        </Provider>
     </div>
 );
-
-// export const App = () => {
-//     const [isShowPlanets, setIsShowPlanets] = useState(false);
-
-//     const bthnHanlder = () => {
-//         setIsShowPlanets((prev) => !prev);
-//     };
-
-//     return (
-//         <div>
-//             <button onClick={bthnHanlder} type='button'>Кнопка</button>
-//             {isShowPlanets && <Planets />}
-//         </div>
-//     );
-// };
