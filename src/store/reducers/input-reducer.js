@@ -1,3 +1,19 @@
+import {createSlice} from '@reduxjs/toolkit';
+
+const sliceConfig = {
+    name: 'inputValue', // имя среза store
+    initialState: { // объект начального состояния
+        inputValue: ''
+    },
+    reducers: {// объект функций reducers
+        setInputValue: (state, action) => {
+            state.inputValue = action.payload;
+        }
+    }
+};
+
+export const {reducer, actions} = createSlice(sliceConfig);
+
 // const initState = {
 //     inputValue: ''
 // };
