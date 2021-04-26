@@ -12,11 +12,11 @@ const rndBTN = document.getElementById('rnd');
 const mainInput = document.getElementById('main-input');
 const cardInput = document.getElementById('card-input');
 
-field.innerHTML = getState().number;
+field.innerHTML = getState().numberReducer.value;
 
 subscribe(() => {
-    field.innerHTML = getState().numberReducer.number;
-    field2.innerHTML = getState().inputReducer.inputValue;
+    field.innerHTML = getState().numberReducer.value;
+    // field2.innerHTML = getState().inputReducer.inputValue;
 });
 
 incBTN.addEventListener('click', () => {

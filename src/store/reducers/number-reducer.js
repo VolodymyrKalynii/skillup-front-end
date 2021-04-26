@@ -1,32 +1,26 @@
-import {ActionTypes} from '../action-types/number-action-types';
+import {createSlice} from '@reduxjs/toolkit';
 
-const initState = {
-    number: 0
-};
-
-export const numberReducer = (state = initState, action) => {
-    switch (action.type) {
-        case ActionTypes.INC:
-            return {
-                ...state,
-                number: state.number + 1
-            };
-        case ActionTypes.DEC:
-            return {
-                ...state,
-                number: state.number - 1
-            };
-        case ActionTypes.RND:
-            return {
-                ...state,
-                number: state.number + action.payload
-            };
-        case ActionTypes.SET_INPUT_NUMBER:
-            return {
-                ...state,
-                number: action.payload
-            };
-        default:
-            return state;
+const sliceConfig = {
+    name: 'counter', // имя среза store
+    initialState: { // объект начального состояния
+        value: 0
+    },
+    reducers: {// объект функций reducers
+        increment: (state) => {
+            state.value += 1;
+        },
+        decrement: (state) => {
+            state.value -= 1;
+        },
+        addRnd: (state, action) => {
+            state.value += action.payload;
+        },
+        setInputNumber: (state, action) => {
+            state.value = action.payload;
+        }
     }
 };
+
+const numberReducer = createSlice(sliceConfig); // создание среза
+export const actions = numberReducer.actions;
+export default numberReducer.reducer;

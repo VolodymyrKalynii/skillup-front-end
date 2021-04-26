@@ -1,7 +1,9 @@
-import {numberReducer} from './number-reducer';
-import {inputReducer} from './input-reducer';
+import numberReducer from './number-reducer';
+// import {numberReducer} from './number-reducer';
+// import {inputReducer} from './input-reducer';
 
-export const reducers = {
-    numberReducer,
-    inputReducer
+// console.log(numberReducer);
+
+export const reducer = {
+    numberReducer
 };

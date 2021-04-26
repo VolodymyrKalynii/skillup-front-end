@@ -1,7 +1,11 @@
-import {createStore, applyMiddleware, combineReducers} from 'redux';
-import {composeWithDevTools} from 'redux-devtools-extension';
+import {configureStore} from '@reduxjs/toolkit';
 
-import {reducers} from './reducers';
+// import {composeWithDevTools} from 'redux-devtools-extension';
+
+import {reducer} from './reducers';
+// import {reducers} from './reducers';
+
+console.log(reducer);
 
 const logMiddleware = ({getState, dispatch}) => (dispatch) => (action) => {
     console.log(action);
@@ -15,6 +19,7 @@ const logMiddleware = ({getState, dispatch}) => (dispatch) => (action) => {
 //     return dispatch(action);
 // };
 
-const rootReducers = combineReducers(reducers);
+// const rootReducers = combineReducers(reducers);
 
-export const store = createStore(rootReducers, composeWithDevTools(applyMiddleware(logMiddleware)));
+export const store = configureStore({reducer});
+// export const store = createStore(reducer, applyMiddleware(logMiddleware));
