@@ -1,4 +1,4 @@
-import {ActionTypes} from './action-types';
+import {ActionTypes} from '../action-types/number-action-types';
 
 export const incAction = () => ({type: ActionTypes.INC});
 export const decAction = () => ({type: ActionTypes.DEC});

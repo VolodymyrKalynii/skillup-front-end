@@ -1,5 +1,5 @@
-import {incAction, decAction, rndAction, setInputNumberAction} from './actions';
-import {store} from './store';
+import {incAction, decAction, rndAction, setInputNumberAction} from '../actions/number-actions';
+import {store} from '../store';
 
 const {dispatch} = store;
 

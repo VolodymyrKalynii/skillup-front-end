@@ -1,18 +1,22 @@
-import {incDispatcher, decDispatcher, rndDispatcher, setInputNumberDispatcher} from './store/dispatchers';
+import {incDispatcher, decDispatcher, rndDispatcher, setInputNumberDispatcher} from './store/dispatchers/number-dispatchers';
+import {setInputValueDispatcher} from './store/dispatchers/input-dispatchers';
 import {store} from './store/store';
 
 const {subscribe, getState} = store;
 
 const field = document.getElementById('field');
+const field2 = document.getElementById('field2');
 const incBTN = document.getElementById('inc');
 const decBTN = document.getElementById('dec');
 const rndBTN = document.getElementById('rnd');
-const input = document.getElementById('input');
+const mainInput = document.getElementById('main-input');
+const cardInput = document.getElementById('card-input');
 
-field.innerHTML = getState();
+field.innerHTML = getState().number;
 
 subscribe(() => {
-    field.innerHTML = getState();
+    field.innerHTML = getState().numberReducer.number;
+    field2.innerHTML = getState().inputReducer.inputValue;
 });
 
 incBTN.addEventListener('click', () => {
@@ -29,11 +33,19 @@ rndBTN.addEventListener('click', () => {
     rndDispatcher(rndNumber);
 });
 
-input.addEventListener('input', (e) => {
+mainInput.addEventListener('input', (e) => {
     const {value} = e.target;
     console.log(value);
 
     setInputNumberDispatcher(+value);
+    // rndDispatcher(rndNumber);
+});
+
+cardInput.addEventListener('input', (e) => {
+    const {value} = e.target;
+    console.log(value);
+
+    setInputValueDispatcher(value);
     // rndDispatcher(rndNumber);
 });
 

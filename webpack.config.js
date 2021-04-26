@@ -20,7 +20,7 @@ const publicPath = '/';
 const createPlugins = (isProd) => {
 	const def = [
 		new HtmlWebpackPlugin({
-			title: 'skillup 35',
+			title: 'skillup 36',
 			template: path.resolve(__dirname, './src/template.html'), // шаблон
 			filename: 'index.html', // название выходного файла,
 			base: '/'
