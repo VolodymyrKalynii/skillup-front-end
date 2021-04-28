@@ -13,6 +13,7 @@
     "react/jsx-closing-tag-location": "off",
     "no-plusplus": "off",
     "indent": "off",
+    "no-undef": "error",
     "react/no-array-index-key": "off",
     "import/no-unresolved": "off",
     "import/no-absolute-path": "off",
