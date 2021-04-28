@@ -1,34 +1,32 @@
 import React from 'react';
-import {connect} from 'react-redux';
-
-// import {incDispatcher} from '../../../store/dispatchers';
 
 import styles from './styles.scss';
 
-const ClickCounterReduxBody = ({storeContent, inc}) => {
-    // const dispatch = useDispatch();
+export const ClickCounterRedux = () => {
 
-    const btnHanlder = () => {
-        // dispatch({type: 'INCREMENT'});
-        inc();
+    const incHandler = () => {
+        console.log('increment');
     };
 
-    const btn2Hanlder = () => {
-        console.log('btnHanlder');
+    const decHandler = () => {
+        console.log('decrement');
+    };
+
+    const rndHanlder = () => {
+        console.log('decrement');
+    };
+
+    const inputHanlder = () => {
+        console.log('inputHanlder');
     };
     
     return (
         <div>
-            <p>Количество кликов: {storeContent}</p>
-            <p><button className={styles.button} type='button' onClick={btnHanlder}>click</button></p>
-            <p><button className={styles.button} type='button' onClick={btn2Hanlder}>getRandNumber</button></p>
+            {/* <p>Количество кликов: {storeContent}</p> */}
+            <button className={styles.button} type='button' onClick={incHandler}>increment</button>
+            <button className={styles.button} type='button' onClick={decHandler}>decrement</button>
+            <button className={styles.button} type='button' onClick={rndHanlder}>rnd</button>
+            <input type='text' onChange={inputHanlder}/>
         </div>
     );
 };
-
-const mapStateToProps = (storeContent) => ({storeContent});
-const mapDispatchToProps = (dispatch) => ({
-    inc: () => dispatch({type: 'INCREMENT'})
-});
-
-export const ClickCounterRedux = connect(mapStateToProps, mapDispatchToProps)(ClickCounterReduxBody);

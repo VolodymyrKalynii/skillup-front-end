@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
-import {connect} from 'react-redux';
 
 import styles from './styles.scss';
 
-export const InputFuncBody = ({storeContent}) => {
+export const InputFunc = () => {
     const [user, setUser] = useState({name: 'Vova', age: 27});
 
     const onInputChange = (e) => {
@@ -17,15 +16,10 @@ export const InputFuncBody = ({storeContent}) => {
     return (
         <div>
             <p><input className={styles.input} value={name} onChange={onInputChange} type='text'/></p>
-            <p>name: {name} {storeContent}</p>
             <p>age: {age}</p>
         </div>
     );
 };
-
-const mapStateToProps = (storeContent) => ({storeContent});
-
-export const InputFunc = connect(mapStateToProps)(InputFuncBody);
 
 // export const InputFunc = () => {
 //     const [inputValue, setInputValue] = useState('');

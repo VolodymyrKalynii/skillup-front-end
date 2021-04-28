@@ -1,4 +1,14 @@
-import {createStore} from 'redux';
-import {reducer} from './reducer';
+import {configureStore} from '@reduxjs/toolkit';
 
-export const store = createStore(reducer);
+import {reducer} from './reducers';
+
+const logMiddleware = () => (dispatch) => (action) => {
+    console.log(action);
+
+    return dispatch(action);
+};
+
+export const store = configureStore({
+    reducer,
+    middleware: [logMiddleware]
+});
