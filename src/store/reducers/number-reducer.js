@@ -4,7 +4,8 @@ import {createSlice} from '@reduxjs/toolkit';
 const sliceConfig = {
     name: 'counterReducer', // имя среза store
     initialState: { // объект начального состояния
-        number: 0
+        number: 0,
+        testData: 'Value'
     },
     reducers: {// объект функций reducers
         increment: (state) => {

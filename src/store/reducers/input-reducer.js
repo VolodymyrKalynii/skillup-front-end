@@ -4,7 +4,7 @@ import {createSlice} from '@reduxjs/toolkit';
 const sliceConfig = {
     name: 'inputValue', // имя среза store
     initialState: { // объект начального состояния
-        inputValue: ''
+        inputValue: 'Привет'
     },
     reducers: {// объект функций reducers
         setInputValue: (state, action) => {

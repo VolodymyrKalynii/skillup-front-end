@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {useSelector} from 'react-redux';
 import {Switch, Route, Redirect} from 'react-router-dom';
 
 import {Planets, Persons} from '../common/swapi';
@@ -27,6 +28,8 @@ const Product = (p) => {
     const {id} = p.match.params;
     const [data, setData] = useState(null);
 
+    const number = useSelector((store) => store.numberReducer.number);
+
     useEffect(() => {
         let isMounted = true;
 
@@ -50,6 +53,7 @@ const Product = (p) => {
     return (
         <div>
             Product {data.name}
+            <p>{number}</p>
         </div>
     );
 };
