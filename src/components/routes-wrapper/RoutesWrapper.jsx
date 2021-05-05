@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useSelector} from 'react-redux';
 import {Switch, Route, Redirect} from 'react-router-dom';
 
+import {DifferentComponents} from '../common/different-componets';
 import {Planets, Persons} from '../common/swapi';
 
 import {Comments} from './parts';
@@ -74,6 +75,7 @@ export const RoutesWrapper = () => (
         <Route path='/persons' component={Persons} />
         <Route path='/comments' component={Comments} />
         <Route path='/products' component={Products} />
+        <Route path='/components' component={DifferentComponents} />
         <Route component={() => <div>404</div>} />
     </Switch>
 );

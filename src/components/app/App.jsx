@@ -7,8 +7,9 @@ import {store} from '../../store/store';
 
 import {Nav} from '../common/nav';
 // import {InputFunc} from '../common/input-func';
-import {ClickCounterRedux} from '../common/click-counter-func-redux';
+// import {ClickCounterRedux} from '../common/click-counter-func-redux';
 import {ErrorBoundary} from '../error';
+// import {CommentsAppRedux} from '../common/comments-app-redux';
 
 import {RoutesWrapper} from '../routes-wrapper/RoutesWrapper';
 
@@ -21,7 +22,8 @@ export const App = () => (
         <Provider store={store}>
             <ErrorBoundary>
                 {/* <InputFunc /> */}
-                <ClickCounterRedux str='data' />
+                {/* <CommentsAppRedux/> */}
+                {/* <ClickCounterRedux str='data' /> */}
                 <BrowserRouter>
                     <Nav />
                     <RoutesWrapper />

@@ -1,0 +1,1 @@
+export {CommentsAppRedux} from './CommentsAppRedux';
