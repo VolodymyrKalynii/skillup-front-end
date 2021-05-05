@@ -20,7 +20,7 @@ Comments.propTypes = {
             avatar: PropTypes.string.isRequired,
             text: PropTypes.string.isRequired,
             author: PropTypes.string.isRequired,
-            isLikeed: PropTypes.bool.isRequired
+            isLiked: PropTypes.bool.isRequired
         })
     ).isRequired
 };

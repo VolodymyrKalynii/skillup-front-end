@@ -14,21 +14,21 @@ const getComments = () => [
         avatar: '..../',
         text: 'Привет мир',
         author: 'Ivan',
-        isLikeed: false
+        isLiked: false
     },
     {
         id: 22,
         avatar: '..../',
         text: 'Аллоха',
         author: 'Антон',
-        isLikeed: true
+        isLiked: true
     },
     {
         id: 52,
         avatar: '..../',
         text: 'Добрый вечер',
         author: 'Vova',
-        isLikeed: false
+        isLiked: false
     }
 ];
 
@@ -60,16 +60,16 @@ export class CommentsApp extends React.Component {
         }, 1);
     }
 
-    toggleCommentLikee = (inputId) => {
+    toggleCommentLike = (inputId) => {
         const stateCb = (preState) => {
             const {commentsList} = preState;
 
             const newCommentsList = commentsList.map((item) => {
-                const {id, isLikeed} = item;
+                const {id, isLiked} = item;
 
                 return {
                     ...item,
-                    isLikeed: inputId === id ? !isLikeed : isLikeed
+                    isLiked: inputId === id ? !isLiked : isLiked
                 };
             });
 
@@ -110,7 +110,7 @@ export class CommentsApp extends React.Component {
 
     render() {
         const {commentsList, inputFilterValue, isLoaded, inputValue} = this.state;
-        
+
         if (!isLoaded) {
             return <Loader/>;
         }
@@ -120,7 +120,7 @@ export class CommentsApp extends React.Component {
         const contextValue = {
             inputValue,
             delHandler: this.delHandler,
-            toggleCommentLikee: this.toggleCommentLikee
+            toggleCommentLike: this.toggleCommentLike
         };
 
         return (

@@ -5,15 +5,15 @@ import {CommentsAppContext} from '../../../context';
 
 import {Title} from './title/Title';
 
-export const Comment = ({avatar, id, author, text, isLikeed}) => {
-    const {delHandler, toggleCommentLikee, inputValue} = useContext(CommentsAppContext);
+export const Comment = ({avatar, id, author, text, isLiked}) => {
+    const {delHandler, toggleCommentLike, inputValue} = useContext(CommentsAppContext);
 
     const style = {
         background: text.length < 10 ? 'coral' : 'lightblue',
         borderBottom: '1px solid'
     };
 
-    const btnContent = isLikeed ? '+' : '-';
+    const btnContent = isLiked ? '+' : '-';
 
     return (
         <>
@@ -25,7 +25,7 @@ export const Comment = ({avatar, id, author, text, isLikeed}) => {
             <p style={style}>
                 <span>Коммент: {text}</span>
             </p>
-            <p><button type='button' onClick={() => toggleCommentLikee(id)}>{btnContent}</button></p>
+            <p><button type='button' onClick={() => toggleCommentLike(id)}>{btnContent}</button></p>
             <button onClick={() => delHandler(id)} type='button'>del</button>
         </>
     );
@@ -36,7 +36,7 @@ Comment.propTypes = {
     avatar: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
-    isLikeed: PropTypes.bool.isRequired
+    isLiked: PropTypes.bool.isRequired
 };
 
 /*
