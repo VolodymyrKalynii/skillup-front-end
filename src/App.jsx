@@ -19,8 +19,10 @@ const Main = () => (
 export const App = () => (
     <HashRouter>
         <Switch>
-            <Route exact path={`${pathConfig.root}/`} component={Main} />
-            <Route path={`${pathConfig.root}/blog`} component={() => <div>...blog</div>} />
+            <Route exact path={`/`} component={Main} />
+            <Route path={`/blog`} component={() => <div>...blog</div>} />
+            {/*<Route exact path={`${pathConfig.root}/`} component={Main} />*/}
+            {/*<Route path={`${pathConfig.root}/blog`} component={() => <div>...blog</div>} />*/}
         </Switch>
     </HashRouter>
 );

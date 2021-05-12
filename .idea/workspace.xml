@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="723bf471-2871-4ad5-ae59-4ba5ab92604f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.f95070bc.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.f95070bc.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.11f320ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.11f320ca.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/path-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/path-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../repo2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,25 +92,25 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="854" y="331" key="FileChooserDialogImpl" timestamp="1620834318437">
+    <state x="854" y="331" key="FileChooserDialogImpl" timestamp="1620838747640">
       <screen x="99" y="0" width="1949" height="1152" />
     </state>
-    <state x="854" y="331" key="FileChooserDialogImpl/99.0.1949.1152@99.0.1949.1152" timestamp="1620834318437" />
-    <state width="1928" height="137" key="GridCell.Tab.0.bottom" timestamp="1620838430104">
+    <state x="854" y="331" key="FileChooserDialogImpl/99.0.1949.1152@99.0.1949.1152" timestamp="1620838747640" />
+    <state width="1928" height="203" key="GridCell.Tab.0.bottom" timestamp="1620838982779">
       <screen x="99" y="0" width="1949" height="1152" />
     </state>
-    <state width="1928" height="137" key="GridCell.Tab.0.bottom/99.0.1949.1152@99.0.1949.1152" timestamp="1620838430104" />
-    <state width="1928" height="137" key="GridCell.Tab.0.center" timestamp="1620838430104">
+    <state width="1928" height="203" key="GridCell.Tab.0.bottom/99.0.1949.1152@99.0.1949.1152" timestamp="1620838982779" />
+    <state width="1928" height="203" key="GridCell.Tab.0.center" timestamp="1620838982779">
       <screen x="99" y="0" width="1949" height="1152" />
     </state>
-    <state width="1928" height="137" key="GridCell.Tab.0.center/99.0.1949.1152@99.0.1949.1152" timestamp="1620838430104" />
-    <state width="1928" height="137" key="GridCell.Tab.0.left" timestamp="1620838430103">
+    <state width="1928" height="203" key="GridCell.Tab.0.center/99.0.1949.1152@99.0.1949.1152" timestamp="1620838982779" />
+    <state width="1928" height="203" key="GridCell.Tab.0.left" timestamp="1620838982779">
       <screen x="99" y="0" width="1949" height="1152" />
     </state>
-    <state width="1928" height="137" key="GridCell.Tab.0.left/99.0.1949.1152@99.0.1949.1152" timestamp="1620838430103" />
-    <state width="1928" height="137" key="GridCell.Tab.0.right" timestamp="1620838430104">
+    <state width="1928" height="203" key="GridCell.Tab.0.left/99.0.1949.1152@99.0.1949.1152" timestamp="1620838982779" />
+    <state width="1928" height="203" key="GridCell.Tab.0.right" timestamp="1620838982779">
       <screen x="99" y="0" width="1949" height="1152" />
     </state>
-    <state width="1928" height="137" key="GridCell.Tab.0.right/99.0.1949.1152@99.0.1949.1152" timestamp="1620838430104" />
+    <state width="1928" height="203" key="GridCell.Tab.0.right/99.0.1949.1152@99.0.1949.1152" timestamp="1620838982779" />
   </component>
 </project>
