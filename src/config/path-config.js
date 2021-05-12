@@ -1,4 +1,4 @@
 export const pathConfig = {
-    root: '/skillup-front-end/build'
-    // root: ''
+    // root: '/skillup-front-end/build'
+    root: ''
 }

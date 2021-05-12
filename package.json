@@ -20,7 +20,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "/skillup-front-end/build/",
+
   "browserslist": {
     "production": [
       ">0.2%",
