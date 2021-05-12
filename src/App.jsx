@@ -1,8 +1,12 @@
 import React from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+
+import {pathConfig} from './config/path-config';
+
 import {Title} from './components/title/Title'
 import FormInput from './components/form-input/FormInput'
 
-export const App = () => (
+const Main = () => (
   <div>
     <Title title={'главная'}/>
     <Title title={'главная но не совсем'}/>
@@ -10,4 +14,13 @@ export const App = () => (
     <FormInput labelText={'пароль'} inputType={'password'} />
     <FormInput labelText={'телефон'} inputType={'phone'} />
   </div>
+);
+
+export const App = () => (
+    <BrowserRouter>
+        <Switch>
+            <Route exact path={`${pathConfig.root}/`} component={Main} />
+            <Route path={`${pathConfig.root}/blog`} component={() => <div>...blog</div>} />
+        </Switch>
+    </BrowserRouter>
 );
