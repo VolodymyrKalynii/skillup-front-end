@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter, Router, HashRouter, Switch, Route} from 'react-router-dom';
 
 import {pathConfig} from './config/path-config';
 
@@ -17,10 +17,10 @@ const Main = () => (
 );
 
 export const App = () => (
-    <BrowserRouter>
+    <HashRouter>
         <Switch>
             <Route exact path={`${pathConfig.root}/`} component={Main} />
             <Route path={`${pathConfig.root}/blog`} component={() => <div>...blog</div>} />
         </Switch>
-    </BrowserRouter>
+    </HashRouter>
 );
