@@ -1,1 +1,0 @@
-export {ClickCounter} from './ClickCounter';

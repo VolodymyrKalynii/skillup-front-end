@@ -1,1 +1,0 @@
-export {ClickCounterFunc} from './ClickCounterFunc';
