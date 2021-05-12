@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="723bf471-2871-4ad5-ae59-4ba5ab92604f" name="Default Changelist" comment="" />
+    <list default="true" id="723bf471-2871-4ad5-ae59-4ba5ab92604f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +28,35 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,10 +69,33 @@
       <option name="presentableId" value="Default" />
       <updated>1620759252304</updated>
       <workItem from="1620759253731" duration="1377000" />
+      <workItem from="1620834293717" duration="235000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="854" y="331" key="FileChooserDialogImpl" timestamp="1620834318437">
+      <screen x="99" y="0" width="1949" height="1152" />
+    </state>
+    <state x="854" y="331" key="FileChooserDialogImpl/99.0.1949.1152@99.0.1949.1152" timestamp="1620834318437" />
+    <state width="1928" height="404" key="GridCell.Tab.0.bottom" timestamp="1620834490071">
+      <screen x="99" y="0" width="1949" height="1152" />
+    </state>
+    <state width="1928" height="404" key="GridCell.Tab.0.bottom/99.0.1949.1152@99.0.1949.1152" timestamp="1620834490071" />
+    <state width="1928" height="404" key="GridCell.Tab.0.center" timestamp="1620834490071">
+      <screen x="99" y="0" width="1949" height="1152" />
+    </state>
+    <state width="1928" height="404" key="GridCell.Tab.0.center/99.0.1949.1152@99.0.1949.1152" timestamp="1620834490071" />
+    <state width="1928" height="404" key="GridCell.Tab.0.left" timestamp="1620834490071">
+      <screen x="99" y="0" width="1949" height="1152" />
+    </state>
+    <state width="1928" height="404" key="GridCell.Tab.0.left/99.0.1949.1152@99.0.1949.1152" timestamp="1620834490071" />
+    <state width="1928" height="404" key="GridCell.Tab.0.right" timestamp="1620834490071">
+      <screen x="99" y="0" width="1949" height="1152" />
+    </state>
+    <state width="1928" height="404" key="GridCell.Tab.0.right/99.0.1949.1152@99.0.1949.1152" timestamp="1620834490071" />
   </component>
 </project>
