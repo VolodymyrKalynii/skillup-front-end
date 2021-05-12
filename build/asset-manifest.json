@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/skillup-front-end/build/static/css/main.2ae47eeb.chunk.css",
-    "main.js": "/skillup-front-end/build/static/js/main.02a69727.chunk.js",
-    "main.js.map": "/skillup-front-end/build/static/js/main.02a69727.chunk.js.map",
+    "main.js": "/skillup-front-end/build/static/js/main.0c0daff2.chunk.js",
+    "main.js.map": "/skillup-front-end/build/static/js/main.0c0daff2.chunk.js.map",
     "runtime-main.js": "/skillup-front-end/build/static/js/runtime-main.da8feb85.js",
     "runtime-main.js.map": "/skillup-front-end/build/static/js/runtime-main.da8feb85.js.map",
-    "static/js/2.ab51d558.chunk.js": "/skillup-front-end/build/static/js/2.ab51d558.chunk.js",
-    "static/js/2.ab51d558.chunk.js.map": "/skillup-front-end/build/static/js/2.ab51d558.chunk.js.map",
+    "static/js/2.88bc20e8.chunk.js": "/skillup-front-end/build/static/js/2.88bc20e8.chunk.js",
+    "static/js/2.88bc20e8.chunk.js.map": "/skillup-front-end/build/static/js/2.88bc20e8.chunk.js.map",
     "index.html": "/skillup-front-end/build/index.html",
     "static/css/main.2ae47eeb.chunk.css.map": "/skillup-front-end/build/static/css/main.2ae47eeb.chunk.css.map",
-    "static/js/2.ab51d558.chunk.js.LICENSE.txt": "/skillup-front-end/build/static/js/2.ab51d558.chunk.js.LICENSE.txt"
+    "static/js/2.88bc20e8.chunk.js.LICENSE.txt": "/skillup-front-end/build/static/js/2.88bc20e8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.da8feb85.js",
-    "static/js/2.ab51d558.chunk.js",
+    "static/js/2.88bc20e8.chunk.js",
     "static/css/main.2ae47eeb.chunk.css",
-    "static/js/main.02a69727.chunk.js"
+    "static/js/main.0c0daff2.chunk.js"
   ]
 }
