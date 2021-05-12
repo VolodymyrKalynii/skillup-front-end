@@ -1,7 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Router, HashRouter, Switch, Route} from 'react-router-dom';
-
-import {pathConfig} from './config/path-config';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 
 import {Title} from './components/title/Title'
 import FormInput from './components/form-input/FormInput'
@@ -21,8 +19,6 @@ export const App = () => (
         <Switch>
             <Route exact path={`/`} component={Main} />
             <Route path={`/blog`} component={() => <div>...blog</div>} />
-            {/*<Route exact path={`${pathConfig.root}/`} component={Main} />*/}
-            {/*<Route path={`${pathConfig.root}/blog`} component={() => <div>...blog</div>} />*/}
         </Switch>
     </HashRouter>
 );

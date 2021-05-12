@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/skillup-front-end/build/static/css/main.2ae47eeb.chunk.css",
-    "main.js": "/skillup-front-end/build/static/js/main.3bfaaa16.chunk.js",
-    "main.js.map": "/skillup-front-end/build/static/js/main.3bfaaa16.chunk.js.map",
+    "main.js": "/skillup-front-end/build/static/js/main.cf5da74d.chunk.js",
+    "main.js.map": "/skillup-front-end/build/static/js/main.cf5da74d.chunk.js.map",
     "runtime-main.js": "/skillup-front-end/build/static/js/runtime-main.da8feb85.js",
     "runtime-main.js.map": "/skillup-front-end/build/static/js/runtime-main.da8feb85.js.map",
     "static/js/2.65813ca9.chunk.js": "/skillup-front-end/build/static/js/2.65813ca9.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.da8feb85.js",
     "static/js/2.65813ca9.chunk.js",
     "static/css/main.2ae47eeb.chunk.css",
-    "static/js/main.3bfaaa16.chunk.js"
+    "static/js/main.cf5da74d.chunk.js"
   ]
 }
