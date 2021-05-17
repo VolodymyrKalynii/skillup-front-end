@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="723bf471-2871-4ad5-ae59-4ba5ab92604f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/code.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codeJs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/content/Content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/content/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.2ae47eeb.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.2ae47eeb.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.65813ca9.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.65813ca9.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.65813ca9.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.cf5da74d.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.cf5da74d.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.da8feb85.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.da8feb85.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form-input/FormInput.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/title/Title.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/path-config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tasks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -60,6 +45,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="ts.external.directory.path" value="D:\skillUp\Front-End\code\repo\node_modules\typescript\lib" />
   </component>
   <component name="RunManager" selected="npm.start">
@@ -107,6 +93,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/code.js" />
+      </list>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="804" y="323" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621266716931">
@@ -117,21 +108,25 @@
       <screen x="99" y="0" width="1949" height="1152" />
     </state>
     <state x="854" y="331" key="FileChooserDialogImpl/99.0.1949.1152@99.0.1949.1152" timestamp="1620838747640" />
-    <state width="1928" height="203" key="GridCell.Tab.0.bottom" timestamp="1620838982779">
+    <state width="1928" height="530" key="GridCell.Tab.0.bottom" timestamp="1621274340191">
       <screen x="99" y="0" width="1949" height="1152" />
     </state>
-    <state width="1928" height="203" key="GridCell.Tab.0.bottom/99.0.1949.1152@99.0.1949.1152" timestamp="1620838982779" />
-    <state width="1928" height="203" key="GridCell.Tab.0.center" timestamp="1620838982779">
+    <state width="1928" height="530" key="GridCell.Tab.0.bottom/99.0.1949.1152@99.0.1949.1152" timestamp="1621274340191" />
+    <state width="1928" height="530" key="GridCell.Tab.0.center" timestamp="1621274340191">
       <screen x="99" y="0" width="1949" height="1152" />
     </state>
-    <state width="1928" height="203" key="GridCell.Tab.0.center/99.0.1949.1152@99.0.1949.1152" timestamp="1620838982779" />
-    <state width="1928" height="203" key="GridCell.Tab.0.left" timestamp="1620838982779">
+    <state width="1928" height="530" key="GridCell.Tab.0.center/99.0.1949.1152@99.0.1949.1152" timestamp="1621274340191" />
+    <state width="1928" height="530" key="GridCell.Tab.0.left" timestamp="1621274340191">
       <screen x="99" y="0" width="1949" height="1152" />
     </state>
-    <state width="1928" height="203" key="GridCell.Tab.0.left/99.0.1949.1152@99.0.1949.1152" timestamp="1620838982779" />
-    <state width="1928" height="203" key="GridCell.Tab.0.right" timestamp="1620838982779">
+    <state width="1928" height="530" key="GridCell.Tab.0.left/99.0.1949.1152@99.0.1949.1152" timestamp="1621274340191" />
+    <state width="1928" height="530" key="GridCell.Tab.0.right" timestamp="1621274340191">
       <screen x="99" y="0" width="1949" height="1152" />
     </state>
-    <state width="1928" height="203" key="GridCell.Tab.0.right/99.0.1949.1152@99.0.1949.1152" timestamp="1620838982779" />
+    <state width="1928" height="530" key="GridCell.Tab.0.right/99.0.1949.1152@99.0.1949.1152" timestamp="1621274340191" />
+    <state x="583" y="221" key="SettingsEditor" timestamp="1621268224976">
+      <screen x="99" y="0" width="1949" height="1152" />
+    </state>
+    <state x="583" y="221" key="SettingsEditor/99.0.1949.1152@99.0.1949.1152" timestamp="1621268224976" />
   </component>
 </project>
